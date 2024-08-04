@@ -1,0 +1,55 @@
+#include<iostream.h>
+#include<conio.h>
+
+
+struct student{
+   int id;
+   char sname[15];
+   float fees;
+};
+
+int main(){
+   clrscr();
+   struct student s1,s2,s3;
+
+   cout<<"Enter student ID   : ";
+   cin>>s1.id;
+   cout<<"Enter student name : ";
+   cin>>s1.sname;
+   cout<<"Student Fees for   : ";
+   cin>>s1.fees;
+
+   cout<<"Enter student ID   : ";
+   cin>>s2.id;
+   cout<<"Enter student name : ";
+   cin>>s2.sname;
+   cout<<"Student Fees for   : ";
+   cin>>s2.fees;
+
+
+   cout<<"Enter student ID   : ";
+   cin>>s3.id;
+   cout<<"Enter student name : ";
+   cin>>s3.sname;
+   cout<<"Student Fees for   : ";
+   cin>>s3.fees;
+
+
+    cout<<"s1.id :   "<<s1.id<<endl;
+   cout<<"s1.sname: "<<s1.sname<<endl;
+   cout<<"s1.fees:  "<<s1.fees<<endl;
+
+   cout<<"s2.id :   "<<s2.id<<endl;
+   cout<<"s2.sname: "<<s2.sname<<endl;
+   cout<<"s2.fees:  "<<s2.fees<<endl;
+
+
+   cout<<"s3.id :   "<<s3.id<<endl;
+   cout<<"s3.sname: "<<s3.sname<<endl;
+   cout<<"s3.fees:  "<<s3.fees<<endl;
+
+
+
+   getch();
+   return 0;
+}
