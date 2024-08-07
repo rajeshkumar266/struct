@@ -1,0 +1,63 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+struct crazy{
+   int id,c;
+   char cname[10];
+   float rate;
+};
+
+int main(){
+struct crazy car[50];
+
+   int c,i=0;
+   clrscr();
+   cout<<"\n\t\t\tVedha Car Service";
+   cout<<"\n\t\t\t___________________";
+
+   cout<<"\n\nNo of your cars  : ";
+   cin>>c;
+
+ while (i<c){
+   cout<<"\n\nEnter Your ID      : ";
+   cin>>car[i].id;
+   cout<<"Enter Brand Name   : ";
+   cin>>car[i].cname;
+   cout<<"Enter Car Price    : ";
+   cin>>car[i].rate;
+   i++;
+}
+
+i=0;
+while (i<c){
+   cout<<"\nYour Service Details:";
+   cout<<"\n______________________";
+
+   cout<<"\n\n=================================================================";
+
+   cout<<"\nCar ID             : "<<car[i].id;
+   cout<<"\nCar Name           : "<<car[i].cname;
+   cout<<"\nCar Price          : "<<car[i].rate;
+
+   cout<<"\n===================================================================";
+   i++;
+}
+   cout<<"\n\t\t\tThank You Customer ";
+   cout<<"\nPress any key to continue...";
+   getch();
+
+   clrscr();
+
+
+   cout<<"\n|========================================================|";
+   cout<<"\n|  Car ID   |   Car Name              |   Price          |";
+   cout<<"\n|========================================================|";
+i=0;
+while (i<c){
+   printf("\n|  %-7d  |   %-22s|   %-12.2f   |",car[i].id, car[i].cname, car[i].rate);
+   i++;
+}
+   cout<<"\n|========================================================|";
+   getch();
+return 0;
+}
